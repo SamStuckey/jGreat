@@ -3,6 +3,51 @@
 jGreat is a lightweight DOM manipulation library designed to provide basic traversal, manipulation, and event listening functionality, as well as create AJAX requests.
 
 ### Technical Details
+The core function of the jGreat library is `$g`, which allows for various input types and will perform
+a specific function for each.
+  - `$g(HTMLElement)` A user can pass in an HTML element, which will create an instance of
+  DOMNodeCollection containing that element.  This will allow the user to use any of jGreat's available methods
+  on that object.  
+
+  e.g.
+  ```html
+  <h1>jGreat Rules!</h1>
+  <ul class="reasons-why">
+    <li>low overhead</li>
+  </ul>
+  ```
+  jGreat let's you append an element to a list.
+  ```js
+  $g('<li>').append('<li>super cool</li>');
+  ```
+  will change your output to be the equivalent of
+  ```html
+  <h1>jGreat Rules!</h1>
+  <ul class="reasons-why">
+    <li>low overhead</li>
+    <li>super cool</li>
+  </ul>
+  ```
+  - `$g('String')` You can also pass in a string. This will treat the string as a query parameter and
+  search the DOM for any matching elements.  jGreat will wrap the element in a DOMNodeCollection, giving you access
+  to all of it's available methods.
+
+  e.g.
+  ```js
+  $g('h1').remove();
+  ```
+  This will find all `<h1>` tags and remove those elements from the DOM using jGreat's `remove()` method.
+
+  - `$g(function)` jGreat will recognize functions passed using `$g()` as call backs to be executed asynchronously.  
+  Functions passed in in this manner will be put in a queue and executed in the order in which they were received.
+
+  e.g.
+  ```js
+  $g( () => alert('dogs > cats') )
+  ```
+  This will pass `alert()` in to a queue to be called when the document is loaded.
+
+
 ```js
 $g = function(el){
   if (typeof el === 'function') {
