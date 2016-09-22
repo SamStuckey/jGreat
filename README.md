@@ -28,9 +28,9 @@ a specific function for each.
     <li>super cool</li>
   </ul>
   ```
-  - `$g('String')` You can also pass in a string. This will treat the string as a query parameter and
+  - `$g(selector)` You can also pass in a string or selector. This will treat the input as a query parameter and
   search the DOM for any matching elements.  jGreat will wrap the element in a DOMNodeCollection, giving you access
-  to all of it's available methods.
+  to all of its available methods.
 
   e.g.
   ```js
@@ -38,7 +38,7 @@ a specific function for each.
   ```
   This will find all `<h1>` tags and remove those elements from the DOM using jGreat's `remove()` method.
 
-  - `$g(function)` jGreat will recognize functions passed using `$g()` as call backs to be executed asynchronously.  
+  - `$g(function)` jGreat will recognize functions passed using `$g()` as call backs to be executed when the document is ready and the DOM content has loaded.  
   Functions passed in in this manner will be put in a queue and executed in the order in which they were received.
 
   e.g.
