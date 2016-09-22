@@ -150,3 +150,16 @@ remove () {
 ```
 
 `removeClass(className)` - Remove a provided `class` from elements of a DOMNodeCollection.  This is useful for dynamically updating CSS styles.
+
+## How to use jGreat in your project
+Inside of your project folder, clone this repo:
+```
+git clone https://github.com/SamStuckey/jGreat.git
+```
+This will add the jGreat library to your project.  Then just require the jGreat main.js file in the <head> of your index.html:
+```
+<head>
+  <script type="text/javascript" src="jGreat/lib/main.js" charset="utf-8"></script>
+</head>
+```
+Now all of the jGreat functionality will be available for you to use in your project!
