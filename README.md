@@ -16,7 +16,7 @@ a specific function for each.
     <li>low overhead</li>
   </ul>
   ```
-  jGreat let's you append an element to a list.
+  jGreat lets you append an element to a list.
   ```js
   $g('<li>').append('<li>super cool</li>');
   ```
