@@ -1,0 +1,64 @@
+<!--
+Welcome to jGreat!
+
+This is a sample html page for you to try out some of jGreat's DOM manipulation
+functionality.  You can safely remove this file as well as sample.css if so desired.
+
+To get started, open this file in your browser.
+
+First, let's checkout one of jGreat's primary features, the ability to register
+callbacks on your DOMs load. Try uncommenting this script tag in the body to see
+a jGreat event handler in action.
+
+Nice!  You can add alerts, console.log() to debug, or even schedule API calls.
+
+Now let's fix up that boring list by adding a new class our <li> elements.  To add the class
+'pretty' (from our required sample.css file), open your broswer console window
+(In chrome, right click the window and select 'inspect'). Try this command:
+
+    $g('li').addClass('pretty')
+
+  Cool, we added a css class to all elements with an <li> tag. Dang,
+  that looks pretty! Almost too pretty... let's make thinks more serious by
+  running:
+
+    $g('li').parent().append('<p>hey settle down!</p>')
+
+  Awesome!  we've create a new <p> tag DOM Node element and appended it to our <ul>
+  Nice.  But on second thought, let's keep the party going and remove that
+  crumudgeonly <p> tag by running:
+
+    $g('p').remove()
+
+  Nice, now we can party.  Try out some of the other DOM manipulation functionality,
+  go wild!  For more information, check out the documentation at
+  https://github.com/SamStuckey/jGreat
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="sample.css">
+    <script src="lib/main.js" charset="utf-8"></script>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <h1>Welcom to jGreat!</h1>
+
+    <h3>Reasons to love jGreat</h3>
+    <ul>
+      <li>everything</li>
+      <li>it's so light weight</li>
+      <li>oh so functional</li>
+      <li>free kittens</li>
+    </ul>
+
+    <!--
+    <script type="text/javascript">
+      $g(() => alert('DOM loaded!'))
+    </script>
+    -->
+  </body>
+</html>

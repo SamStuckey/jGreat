@@ -1,0 +1,13 @@
+ /*this is a sample file and can be safely deleted.*/
+
+.pretty {
+  background-color: pink;
+  color: white;
+  font-size: 30px;
+}
+
+.serious {
+  color: grey;
+  font-family: sans-serif;
+  size: 14px;
+}
