@@ -1,39 +1,9 @@
-<!--
-Welcome to jGreat!
+<!-- Welcome to jGreat!
 
 This is a sample html page for you to try out some of jGreat's DOM manipulation
 functionality.  You can safely remove this file as well as sample.css if so desired.
 
-To get started, open this file in your browser.
-
-First, let's checkout one of jGreat's primary features, the ability to register
-callbacks on your DOMs load. Try uncommenting this script tag in the body to see
-a jGreat event handler in action.
-
-Nice!  You can add alerts, console.log() to debug, or even schedule API calls.
-
-Now let's fix up that boring list by adding a new class our <li> elements.  To add the class
-'pretty' (from our required sample.css file), open your broswer console window
-(In chrome, right click the window and select 'inspect'). Try this command:
-
-    $g('li').addClass('pretty')
-
-  Cool, we added a css class to all elements with an <li> tag. Dang,
-  that looks pretty! Almost too pretty... let's make thinks more serious by
-  running:
-
-    $g('li').parent().append('<p>hey settle down!</p>')
-
-  Awesome!  we've create a new <p> tag DOM Node element and appended it to our <ul>
-  Nice.  But on second thought, let's keep the party going and remove that
-  crumudgeonly <p> tag by running:
-
-    $g('p').remove()
-
-  Nice, now we can party.  Try out some of the other DOM manipulation functionality,
-  go wild!  For more information, check out the documentation at
-  https://github.com/SamStuckey/jGreat
--->
+To get started, open this file in your browser. -->
 
 <!DOCTYPE html>
 <html>
@@ -44,8 +14,41 @@ Now let's fix up that boring list by adding a new class our <li> elements.  To a
     <title></title>
   </head>
   <body>
+    <h1>Welcome to jGreat!</h1>
 
-    <h1>Welcom to jGreat!</h1>
+    <p>First, let's checkout one of jGreat's primary features, the ability to register
+    callbacks on your DOMs load. Try uncommenting this script tag to see
+    a jGreat event handler in action.</p>
+
+      <!--
+      <script type="text/javascript">
+        $g(() => alert('DOM loaded!'))
+      </script>
+      -->
+
+    <p>Nice!  You can add alerts, console.log() to debug, or even schedule API calls.</p>
+
+    <p>Now let's fix up that boring list by adding a new class our &#60li&#62 elements.  To add the class
+    'pretty' (from our required sample.css file), open your broswer console window
+    (In chrome, right click the window and select 'inspect'). Try this command:</p>
+
+        <h4>$g('li').addClass('pretty')</h4>
+
+      <p>Cool, we added a css class to all elements with an &#60li&#62 tag. Dang,
+      that looks pretty! Almost too pretty... let's make thinks more serious by
+      running:</p>
+
+        <h4>$g('li').parent().append('&#60p&#62hey settle down!&#60/p&#62')</h4>
+
+      <p>Awesome!  we've create a new &#60p&#62 tag DOM Node element and appended it to our &#60ul&#62
+      Nice.  But on second thought, let's keep the party going and remove that
+      crumudgeonly &#60p&#62 tag by running:</p>
+
+        <h4>$g('p').remove()</h4>
+
+      <p>Nice, now we can party.  Try out some of the other DOM manipulation functionality,
+      go wild!  For more information, check out the documentation at
+      https://github.com/SamStuckey/jGreat</p>
 
     <h3>Reasons to love jGreat</h3>
     <ul>
@@ -55,10 +58,5 @@ Now let's fix up that boring list by adding a new class our <li> elements.  To a
       <li>free kittens</li>
     </ul>
 
-    <!--
-    <script type="text/javascript">
-      $g(() => alert('DOM loaded!'))
-    </script>
-    -->
   </body>
 </html>

@@ -163,3 +163,6 @@ remove () {
 ```
 
 `removeClass(className)` - Remove a provided `class` from elements of a DOMNodeCollection.  This is useful for dynamically updating CSS styles.
+
+###Sample Files
+jGreat contains two sample files, sample.css and sample.html.  These are included as a brief tutorial for using some of jGreats functionality.  Simply open sample.html in your browser and follow the instructions.  You should delete these files when using jGreat in your app.
